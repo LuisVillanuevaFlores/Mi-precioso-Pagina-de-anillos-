@@ -1,0 +1,37 @@
+
+<!DOCTYPE html>
+<html lang="es">
+  
+   <head>
+      <script src="script.js"></script>
+      <script src="jquery.min.js"></script>
+       <style>
+           form{
+               width: 50%;margin: 0 auto;
+           }
+           input[type="text"]{
+               width: 100%;padding: 10px;margin-top: 10px;margin-bottom: 10px;
+           }
+           input[type="button"]{
+               padding: 10px;
+           }
+       
+       </style>
+       
+   </head>
+   
+   <body>
+       <form method="post">
+          <h1>Envio de datos</h1>
+          <input type="text" id="nombre" placeholder="Ingrese Nombre">
+          <input type="text" id="apaterno" placeholder="Ingrese Apellido Paterno">
+          <input type="text" id="amaterno" placeholder="Ingrese Apellido Materno">
+          <input type="button" value="Enviar" onclick="enviar_datos_ajax();"
+       </form>
+       
+       <div id="mostrardatos">
+           
+       </div>
+   </body>
+   
+</html>
